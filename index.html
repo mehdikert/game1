@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400&display=swap');
+    </style>
+    <title>Le Juste Prix</title>
+</head>
+
+<body>
+
+    <div class="all">
+        <img src="Logo_Le_Juste_Prix-removebg-preview (1).png" alt="">
+        <div class="container" id="container">
+            <p>Cliquez sur "OK" pour envoyez le prix</p>
+            <p>Prix entre 5000.00 € ET 100000.00 €</p>
+            <div class="game">
+                <input type="number" placeholder="saisir le prix" id="prix">
+                <input type="button" value="OK" id="btn" onclick="verification()">
+            </div>
+            <p id="alerte"></p>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

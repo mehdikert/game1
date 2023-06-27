@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Mono', monospace;
+
+}
+
+body {
+    background: linear-gradient(90deg, hsla(217, 100%, 60%, 1) 0%, hsla(0, 88%, 60%, 1) 90%);
+}
+
+.all {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 18vh;
+}
+
+img {
+    filter: drop-shadow(0px 0px 50px white);
+}
+
+img:hover {
+    transform: scale(1.2);
+    transition-duration: 1s;
+}
+
+.container {
+    width: 50vw;
+    overflow: hidden;
+    background: linear-gradient(-90deg, hsla(217, 100%, 60%, 1) 0%, hsla(0, 88%, 60%, 1) 90%);
+    padding: 25px 35px;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+}
+
+.container p:nth-child(1) {
+    font-size: 1.4rem;
+}
+
+#prix {
+    padding: 12px 15px;
+    width: 250px;
+    border: none;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    outline: none;
+}
+
+#btn {
+    width: 80px;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+.game {
+    display: flex;
+    gap: 20px;
+    background-color: white;
+    border-radius: 30px;
+    border: none;
+}
+
+@media (max-width : 700px) {
+    #prix {
+        width: 50%;
+        font-size: 12px;
+    }
+
+    #btn {
+        width: 50px;
+        font-size: 12px;
+        padding: 10px 0px;
+    }
+
+    ::placeholder {
+        font-size: 11px;
+        word-spacing: -2px;
+    }
+
+    .game {
+        width: 60vw;
+        gap: 0;
+        justify-content: space-between;
+    }
+
+    .all {
+        margin-top: 0%;
+        padding: 8vh 0px;
+    }
+
+    img {
+        width: 80%;
+    }
+
+}
